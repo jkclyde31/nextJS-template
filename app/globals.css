@@ -16,18 +16,85 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'Rubik-bold';
+  src: url('/fonts/rubik/Rubik-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'barlow';
+  src: url('/fonts/barlow/Barlow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'barlow-m';
+  src: url('/public/fonts/barlow/Barlow-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'myriad';
+  src: url('/fonts/myriad/MYRIADPRO-REGULAR.OTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-l';
+  src: url('/fonts/poppins/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-m';
+  src: url('/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-sb';
+  src: url('/public/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'poppins-b';
+  src: url('/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'nunito'; 
+  src: url('/fonts/nunito/Nunito-Medium.ttf') format('truetype');
+}
+
+
+.mobile{
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .custom-padding {
+    padding-top: 0 !important;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
   }
 }

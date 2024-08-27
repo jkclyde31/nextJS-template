@@ -12,6 +12,28 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      fontFamily: {
+        'rubik-b': ['Rubik-bold'],
+        'barlow': ['barlow'],
+        'barlow-m': ['barlow-m'],
+        'roboto': ['roboto'],
+        'myriad': ['myriad'],
+        'poppins': ['poppins'],
+        'poppins-l': ['poppins-l'],
+        'poppins-m': ['poppins-m'],
+        'poppins-sb': ['poppins-sb'],
+        'poppins-b': ['poppins-b'],
+        'nunito': ['nunito'],
+      },
+
+      screens: {
+        'tablet': {'max': '959px'}, 
+        'xs': '475px',  // You can adjust this value as needed
+
+      
+      }
+
     },
   },
   plugins: [],
